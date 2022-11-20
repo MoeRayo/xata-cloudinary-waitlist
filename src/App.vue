@@ -1,18 +1,17 @@
 <template>
-  <div class="flex-l flex-row-l justify-center justify-between-l">
-    <TheCloudinaryBackground />
-    <TheWaitlistForm />
+  <div>
+    <router-view></router-view>
   </div>
 </template>
-
-<script>
-import TheCloudinaryBackground from "@/components/TheCloudinaryBackground.vue";
-import TheWaitlistForm from "@/components/TheWaitlistForm.vue";
-
-export default {
-  components: {
-    TheCloudinaryBackground,
-    TheWaitlistForm
-  }
+<style>
+.bg-waitlist {
+  background-color: #FFF0E3;
 }
-</script>
+.brown, .b--brown {
+  color: #83492B;
+  border-color: #A8794E
+}
+.bg-brown {
+  background-color: #83492B;
+}
+</style>
