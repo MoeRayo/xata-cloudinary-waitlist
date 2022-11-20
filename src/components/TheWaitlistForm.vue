@@ -29,12 +29,26 @@
 </template>
 
 <script>
+import { getXataClient } from '@/xata'
+
 export default {
   data: () => ({
     firstname: "",
     lastname: "",
     email: ""
-  })
+  }),
+  methods: {
+    async submitForm() {
+      const xata = getXataClient()
+      await xata.db.signups.create({
+        firstname: this.firstname,
+        lastname: this.lastname,
+        email: this.email
+      }).then((res) => {
+      console.log(res)
+      })
+    }
+  }
 }
 </script>
 <style>

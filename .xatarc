@@ -1,0 +1,7 @@
+{
+  "databaseURL": "https://Olufunke-Moronfolu-s-workspace-vj48pf.us-west-2.xata.sh/db/xata-cloudinary-waitlist",
+  "codegen": {
+    "output": "src/xata.js",
+    "moduleType": "esm"
+  }
+}
